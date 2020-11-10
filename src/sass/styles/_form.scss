@@ -1,0 +1,83 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 52.5rem;
+    height: 43.5rem;
+    box-sizing: border-box;
+    padding: 5rem;
+    border: 5px solid $tea;
+    border-radius: 2.5rem;
+
+    &__input {
+        height: 4rem;
+        width: 42.5rem;
+        border-radius: 5rem;
+        box-shadow: $shadow;
+        font-family: $secondFont;
+        font-weight: $regular;
+        color: $black;
+        font-size: 2rem;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        padding: 1rem;
+        margin-bottom: 2.5rem;
+    }
+
+    ::placeholder {
+        font-size: 1.5rem;
+    }
+
+    &__textarea {
+        height: 12.5rem;
+        width: 42.5rem;
+        border-radius: 1.5rem;
+        box-shadow: $shadow;
+        font-family: $secondFont;
+        font-weight: $regular;
+        color: $black;
+        font-size: 1.5rem;
+        border: none;
+        outline: none;
+        padding: 1rem;
+        box-sizing: border-box;
+        margin-bottom: 3rem;
+    }
+
+    &__buttom {
+        background-color: $tea;
+        height: 4.5rem;
+        width: 11rem;
+        text-align: center;
+        justify-items: center;
+        font-family: $mainFont;
+        font-weight: bold;
+        color: white;
+        font-size: 3rem;
+        border: none;
+        border-radius: 1.5rem;
+        box-sizing: border-box;
+        outline: none;
+        box-shadow: $shadow;
+        cursor: pointer;
+    }
+
+    &__buttom:active {
+        box-shadow: none;
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 40rem;
+        height: 4.5rem;
+    }
+
+    &__notify {
+        width: 24rem;
+        height: 4.5rem;
+    }
+}

@@ -1,0 +1,29 @@
+.skill {
+
+    &__tittle {
+        text-align: center;
+        font-family: $secondFont;
+        font-size: 1.5rem;
+        font-weight: $regular;
+        color: $black;
+        transition: 100ms ease-in;
+        cursor: default;
+    }
+
+    &__icon {
+        color: $black;
+        text-align: center;
+        font-size: 5rem;
+        margin: 0;
+        padding: 0;
+        transition: 100ms ease-in;
+    }
+}
+
+.skill:hover > .skill__tittle {
+    color: $tea;
+}
+
+.skill:hover > .skill__icon {
+    color: $tea;
+}

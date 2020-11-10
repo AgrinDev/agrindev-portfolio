@@ -1,0 +1,53 @@
+.home {
+    display: grid;
+    grid-template-columns: 65rem 60rem;
+    grid-template-rows: 7.20;
+    justify-content: center;
+    justify-items: center;
+    box-sizing: border-box;
+    margin-top: 5rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    &__h1 {
+        font-family: $mainFont;
+        font-weight: $bold;
+        font-size: 5rem;
+        color: $tea;
+        margin: 0.5rem 0 0 0;
+        padding: 0;
+    }
+
+    &__text1 {
+        font-family: $secondFont;
+        font-weight: $regular;
+        font-size: 4rem;
+        color: $black;
+        margin: 3.5rem 0 0 0;
+        padding: 0;
+    }
+
+    &__text2 {
+        font-family: $secondFont;
+        font-weight: $regular;
+        font-size: 3rem;
+        color: $black;
+        margin: 3.5rem 0 0 0;
+        padding: 0;
+    }
+}
+
+.home-main-container {
+    height: 53.5rem;
+    width: 50rem;
+    margin-left: 10rem;
+}
+
+.home-img {
+    width: 100%;
+    height: 100%;
+}

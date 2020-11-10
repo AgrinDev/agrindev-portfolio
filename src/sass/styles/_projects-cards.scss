@@ -1,0 +1,114 @@
+.card {
+    position: relative;
+    box-shadow: $shadow;
+
+    &__view {
+        width: 28rem;
+        height: 18rem;
+        background-color:#cccccc;
+        border-radius: 0.5rem 0.5rem 0 0;
+        overflow: hidden;
+    }
+
+    &__view:hover > &__view-info {
+        height: 18rem;
+    }
+
+    &__view-img {
+        height: 100%;
+        width: 100%;
+    }
+
+    &__view-info {
+        background-color: $teaTransparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: absolute;
+        overflow: hidden;
+        right: 0;
+        top: 0;
+        width: 28rem;
+        height: 0;
+        border-radius: 0.5rem 0.5rem 0 0;
+        transition: 0.3s ease-in;
+    }
+
+    &__view-info-tittle {
+        font-family: $mainFont;
+        font-weight: bold;
+        font-size: 3rem;
+        color: white;
+        margin: 1rem 0 0 0;
+        text-align: center;
+        text-shadow: $shadow;
+    }
+
+    &__view-info-text {
+        font-family: $secondFont;
+        font-weight: $regular;
+        font-size: 1.7rem;
+        text-align: center;
+        color: white;
+        margin: 0.5rem 2rem 0 2rem;
+    }
+
+    &__view-info-buttoms {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 4rem 3.5rem 0 3.5rem;
+        width: 100%;
+    }
+
+    &__view-info-buttom {
+        position: relative;
+        background-color: transparent;
+        border-radius: 1rem;
+        width: 10rem;
+        height: 3rem;
+        margin: 0 0 0 0;
+        border: solid 2px white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        outline: none;
+
+        &:hover {
+            background-color: $darkTea;
+            border: solid 2px $darkTea;
+            box-shadow: $shadow;
+        }
+
+        &:active {
+            box-shadow: none;
+        }
+    }
+
+    &__view-info-link {
+        position: relative;
+        text-decoration: none;
+        color: white;
+        font-family: $mainFont;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    &__tags {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 28rem;
+        height: 3rem;
+        background-color: white;
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+
+    &__tag-icon {
+        padding: 0;
+        margin: 0 0.5rem 0 0.5rem;
+        font-size: 2rem;
+    }
+}

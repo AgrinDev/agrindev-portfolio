@@ -1,0 +1,20 @@
+.footer {
+    width: 100%;
+    height: 5rem;
+    background-color: $tea;
+    margin-top: 3rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__text {
+        font-family: $secondFont;
+        font-weight: $regular;
+        font-size: 2.5rem;
+        color: white;
+        text-align: center;
+        margin: 0;
+        width: 100%;
+    }
+}

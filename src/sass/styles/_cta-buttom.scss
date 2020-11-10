@@ -1,0 +1,42 @@
+.cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &__buttom {
+        text-decoration: none;
+        background: transparent;
+        border: 4px solid $tea;
+        border-radius: 2.5rem;
+        width: 25rem;
+        height: 6rem;
+        padding: 0;
+        margin: 5rem 0 0 0;
+        cursor: pointer;
+        transition: 200ms ease-in;
+        box-shadow: $shadow;
+        outline: none;
+
+        &:hover {
+            background-color: $tea;
+        }
+
+        &:hover > .cta__link {
+            color: $greyLighten;
+            text-shadow: none;
+        }
+
+        &:active {
+            box-shadow: none;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        font-family: $mainFont;
+        font-weight: bold;
+        font-size: 2.5rem;
+        color: $tea;
+        text-shadow: $shadow;
+    }
+}

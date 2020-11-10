@@ -1,0 +1,55 @@
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 5rem;
+    background-color: $greyLighten;
+    box-shadow: $shadowNavBar;
+}
+
+.logo-container {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 5rem;
+}
+
+.logo-img {
+    width: 100%;
+    height: 100%;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-right: 5rem;
+
+    &__buttom {
+        list-style: none;
+        cursor: pointer;
+        border-bottom: 0.3rem solid transparent;
+        height: 5rem;
+        width: 12rem;
+        box-sizing: border-box;
+
+        &:hover {
+            background-color: $grey;
+            border-bottom: 0.3rem solid $tea;
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-family: $mainFont;
+        font-weight: $bold;
+        font-size: 2rem;
+        color: $black;
+        height: 100%;
+        width: 100%;
+    }
+}

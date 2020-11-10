@@ -1,0 +1,17 @@
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    width: 32rem;
+
+    &__icon {
+        color: $greyLighten;
+        font-size: 4rem;
+        background-color: $black;
+        border-radius: 10rem;
+        width: 5.2rem;
+        height: 5.2rem;
+        text-align: center;
+    }
+}
